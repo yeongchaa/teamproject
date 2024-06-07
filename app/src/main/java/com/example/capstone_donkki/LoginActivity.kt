@@ -22,18 +22,21 @@ class LoginActivity : AppCompatActivity() {
             val to_main: Intent = Intent(this, MainActivity::class.java)
             //to_main.putExtra()
             startActivity(to_main)
+            finish()
         }
 
         val btn_reg: Button = findViewById(R.id.btn_reg)
         btn_reg.setOnClickListener {
             val to_reg: Intent = Intent(this, RegisterActivity::class.java)
             startActivity(to_reg)
+            finish()
         }
 
         val btn_google_login: Button = findViewById(R.id.btn_google)
         btn_google_login.setOnClickListener {
             val to_main: Intent = Intent(this, MainActivity::class.java)
             startActivity(to_main)
+            finish()
         }
     }
 }

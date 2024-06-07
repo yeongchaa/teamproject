@@ -111,6 +111,7 @@ class RegisterActivity : AppCompatActivity() {
         btn_Register.setOnClickListener {
             val to_login: Intent = Intent(this, LoginActivity::class.java)
             startActivity(to_login)
+            finish()
 
             //TODO: DB 사용자 데이터 등록
 

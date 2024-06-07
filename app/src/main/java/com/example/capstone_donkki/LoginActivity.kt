@@ -17,6 +17,7 @@ class LoginActivity : AppCompatActivity() {
         val email = et_email.text
         val pw = et_pw.text
 
+        //TODO: DB와 사용자 입력 데이터 비교, 회원 일치 여부 확인
         val btn_login: Button = findViewById(R.id.btn_login)
         btn_login.setOnClickListener {
             val to_main: Intent = Intent(this, MainActivity::class.java)
@@ -25,6 +26,7 @@ class LoginActivity : AppCompatActivity() {
             finish()
         }
 
+        //회원가입 화면 연결
         val btn_reg: Button = findViewById(R.id.btn_reg)
         btn_reg.setOnClickListener {
             val to_reg: Intent = Intent(this, RegisterActivity::class.java)
@@ -32,6 +34,7 @@ class LoginActivity : AppCompatActivity() {
             finish()
         }
 
+        //TODO: Google 로그인 API 연결, 구글 로그인 기능
         val btn_google_login: Button = findViewById(R.id.btn_google)
         btn_google_login.setOnClickListener {
             val to_main: Intent = Intent(this, MainActivity::class.java)

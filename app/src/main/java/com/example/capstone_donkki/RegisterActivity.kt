@@ -35,16 +35,17 @@ class RegisterActivity : AppCompatActivity() {
         val pattern = android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()
 
         et_regEmail.addTextChangedListener(object : TextWatcher {
-            override fun afterTextChanged(p0: Editable?) {
+
+            override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
                 if (!pattern) {
                     et_regEmail.setText("")
                     et_regEmail.setHint("올바르지 않은 이메일 형식입니다.")
                     et_regEmail.setHintTextColor(resources.getColor(R.color.red))
-
                 }
             }
 
-            override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
+            override fun afterTextChanged(p0: Editable?) {
+
 
             }
 

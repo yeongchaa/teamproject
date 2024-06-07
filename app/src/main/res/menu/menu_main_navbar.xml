@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/frag_recipt"
+        android:title="영수증 인식" />
+
+    <item
+        android:id="@+id/frag_cashbook"
+        android:title="가계부" />
+
+    <item
+        android:id="@+id/frag_home"
+        android:title="홈" />
+
+    <item
+        android:id="@+id/frag_mypage"
+        android:title="내 정보" />
+
+    <item
+        android:id="@+id/frag_notiset"
+        android:title="환경설정" />
+</menu>

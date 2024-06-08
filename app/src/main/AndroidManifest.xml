@@ -13,7 +13,7 @@
         android:theme="@style/Theme.Capstone_donkki"
         tools:targetApi="31">
         <activity
-            android:name=".SplashActivity"
+            android:name="com.example.capstone_donkki.SplashActivity"
             android:exported="true"
             android:theme="@style/Theme.Design.NoActionBar">
             <intent-filter>
@@ -22,9 +22,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".RegisterActivity" />
-        <activity android:name=".MainActivity" />
+        <activity android:name="com.example.capstone_donkki.LoginActivity"/>
+        <activity android:name="com.example.capstone_donkki.RegisterActivity" />
+        <activity android:name="com.example.capstone_donkki.MainActivity" />
     </application>
 
 </manifest>

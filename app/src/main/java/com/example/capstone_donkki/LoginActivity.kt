@@ -26,7 +26,15 @@ class LoginActivity : AppCompatActivity() {
             finish()
         }
 
-        //회원가입 화면 연결
+        //TODO: 회원정보 분실 화면 연결
+        val btn_missing: Button = findViewById(R.id.btn_missing)
+        btn_missing.setOnClickListener {
+            val to_missing: Intent = Intent(this, MissingActivity::class.java)
+            startActivity(to_missing)
+            finish()
+        }
+
+        //TODO: 회원가입 화면 연결
         val btn_reg: Button = findViewById(R.id.btn_reg)
         btn_reg.setOnClickListener {
             val to_reg: Intent = Intent(this, RegisterActivity::class.java)

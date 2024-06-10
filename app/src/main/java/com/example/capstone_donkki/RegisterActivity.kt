@@ -33,7 +33,7 @@ class RegisterActivity : AppCompatActivity() {
         val tv_dbcheck: TextView = findViewById(R.id.tv_dblchk)
 
         val pattern = android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()
-
+/*
         et_regEmail.addTextChangedListener(object : TextWatcher {
 
             override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
@@ -53,7 +53,7 @@ class RegisterActivity : AppCompatActivity() {
 
             }
         })
-
+*/
 
         //TODO: 이메일 중복 검사<>DB에서 이메일 매칭 확익
         btn_dbcheck.setOnClickListener {
@@ -68,7 +68,7 @@ class RegisterActivity : AppCompatActivity() {
             */
         }
 
-
+/*
         //TODO: 비밀번호 일치 확인
         et_regpwagn.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
@@ -88,7 +88,7 @@ class RegisterActivity : AppCompatActivity() {
             override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
             }
         })
-
+*/
 
         //TODO: Spinner 배열 설정, 연결
         var spn_data = resources.getStringArray(R.array.age_spinner)

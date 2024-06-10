@@ -26,12 +26,11 @@ class LoginActivity : AppCompatActivity() {
             finish()
         }
 
-        //TODO: 회원정보 분실 화면 연결
-        val btn_missing: Button = findViewById(R.id.btn_missing)
-        btn_missing.setOnClickListener {
-            val to_missing: Intent = Intent(this, MissingActivity::class.java)
-            startActivity(to_missing)
-            finish()
+        //TODO: Email분실 연결
+        val btn_missingEmail: Button = findViewById(R.id.btn_missingEmail)
+        btn_missingEmail.setOnClickListener {
+            val to_missingEmail: Intent = Intent(this, MissingEmailActivity::class.java)
+            startActivity(to_missingEmail)
         }
 
         //TODO: 회원가입 화면 연결

@@ -13,7 +13,7 @@ class FindEmailActivity : AppCompatActivity() {
 
         val missingEmail: TextView = findViewById(R.id.tv_missingemail)
         //TODO: Email 주소  DB에서 찾아서 띄우기
-        missingEmail.setText("")
+        //missingEmail.setText("")
 
         val btn_confirmEmail: Button = findViewById(R.id.btn_confrimEmail)
         btn_confirmEmail.setOnClickListener {

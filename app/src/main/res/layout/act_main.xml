@@ -58,6 +58,7 @@
         android:layout_marginTop="10dp"
         android:fontFamily="@font/notosanskr_bold"
         android:text="홍길동님의 냉장고"
+        android:textColor="#000000"
         android:textSize="20dp"
         app:layout_constraintLeft_toLeftOf="@id/et_search"
         app:layout_constraintTop_toBottomOf="@+id/rcv_searchtag" />
@@ -70,6 +71,7 @@
         android:layout_marginTop="20dp"
         android:fontFamily="@font/notosanskr_medium"
         android:text="더보기"
+        android:textColor="#000000"
         android:textSize="15dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rcv_searchtag" />
@@ -89,6 +91,7 @@
         android:layout_marginTop="20dp"
         android:fontFamily="@font/notosanskr_bold"
         android:text="오늘의 체크리스트"
+        android:textColor="#000000"
         android:textSize="20dp"
         app:layout_constraintLeft_toLeftOf="@id/et_search"
         app:layout_constraintTop_toBottomOf="@+id/rcv_ingredient" />
@@ -101,6 +104,7 @@
         android:layout_marginTop="40dp"
         android:fontFamily="@font/notosanskr_medium"
         android:text="편집"
+        android:textColor="#000000"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rcv_ingredient" />
 

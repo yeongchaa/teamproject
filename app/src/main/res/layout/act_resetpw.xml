@@ -1,29 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFCEB"
+    android:background="@color/background_color"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context=".FindEmailActivity">
+    tools:context=".ResetPwActivity">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
-        android:fontFamily="@font/notosanskr_bold"
         android:gravity="left"
-        android:text="이메일 분실"
-        android:textColor="#000000"
-        android:textSize="30sp"
+        android:text="비밀번호 재설정"
+        android:textSize="24sp"
         android:textStyle="bold" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
         android:layout_width="350dp"
-        android:layout_height="240dp"
+        android:layout_height="270dp"
         android:layout_centerInParent="true"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
@@ -48,50 +48,70 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
                     android:layout_marginBottom="20dp"
-                    android:text="회원님이 사용하셨던 이메일은"
-                    android:textColor="#000000"
+                    android:text="새로운 비밀번호를 입력해 주세요."
                     android:textSize="15sp" />
 
+                <TextView
+                    android:id="@+id/tvResult"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="인증번호를 다시 입력해 주세요."
+                    android:textColor="#FF0000"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
 
                 <TableRow>
 
-                    <TextView
-                        android:id="@+id/tv_missingemail"
+                    <EditText
+                        android:id="@+id/editTextPhoneNumber"
                         android:layout_width="193dp"
                         android:layout_height="35dp"
                         android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
                         android:layout_marginBottom="20dp"
                         android:background="@drawable/shape_textfield_rounded"
+                        android:hint="새 비밀번호"
                         android:inputType="textEmailAddress"
                         android:paddingLeft="16dp"
-                        android:textColor="#000000"
-                        android:text="abc123@gmail.com"
                         android:textSize="14sp" />
 
                 </TableRow>
 
                 <TableRow>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                    <EditText
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
                         android:layout_marginLeft="20dp"
-                        android:layout_marginBottom="20dp"
-                        android:text="입니다."
-                        android:textColor="#000000"
-                        android:textSize="15sp" />
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/shape_textfield_rounded"
+                        android:hint="비밀번호 재확인"
+                        android:inputType="number"
+                        android:paddingLeft="16dp"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/timerTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text=""
+                        android:textColor="#FF0000"
+                        android:textSize="14sp"
+                        android:visibility="gone" />
                 </TableRow>
             </TableLayout>
 
             <Button
-                android:id="@+id/btn_confrimEmail"
+                android:id="@+id/checkbtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="20dp"
                 android:backgroundTint="#593A2E"
                 android:gravity="center"
-                android:text="확인"
-                android:textColor="#FFFFFF" />
+                android:text="확인" />
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>

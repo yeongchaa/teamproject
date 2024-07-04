@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.capstone_donkki.databinding.ActFindemailBinding
 
+//TODO: 리사이클러 뷰 어뎁터 설정
 class Ingredient_Adapter(private val ingredientList: List<IngredientData>) :
     RecyclerView.Adapter<Ingredient_Adapter.CustomViewHolder>() {
     //새로운 뷰 생성

@@ -11,11 +11,11 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.act_login)
 
-        val et_email: EditText = findViewById(R.id.et_email)
-        val et_pw: EditText = findViewById(R.id.et_pw)
+        var et_email: EditText = findViewById(R.id.et_email)
+        var et_pw: EditText = findViewById(R.id.et_pw)
 
-        val email = et_email.text
-        val pw = et_pw.text
+        var email = et_email.text
+        var pw = et_pw.text
 
         //TODO: DB와 사용자 입력 데이터 비교, 회원 일치 여부 확인
         val btn_login: Button = findViewById(R.id.btn_login)

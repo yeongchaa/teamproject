@@ -21,12 +21,12 @@
         android:id="@+id/et_search"
         android:layout_width="250dp"
         android:layout_height="50dp"
-        android:layout_marginLeft="20dp"
         android:layout_marginTop="15dp"
         android:background="@drawable/shape_textfield"
         android:hint="검색"
         android:padding="15dp"
         app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/btn_search"
         app:layout_constraintTop_toBottomOf="@+id/logo" />
 
     <android.widget.Button
@@ -82,13 +82,15 @@
         android:layout_height="130dp"
         android:layout_marginTop="10dp"
         android:scrollbars="horizontal"
-        app:layout_constraintTop_toBottomOf="@+id/tv_refmore" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_refmore"
+        tools:itemCount="3"
+        tools:listitem="@layout/ref_item_list" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:fontFamily="@font/notosanskr_bold"
         android:text="오늘의 체크리스트"
         android:textColor="#000000"
@@ -101,7 +103,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="300dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:fontFamily="@font/notosanskr_medium"
         android:text="편집"
         android:textColor="#000000"
@@ -112,11 +114,10 @@
         android:id="@+id/cbx_checklist"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
         android:background="#FFFFFF"
         android:scrollbars="vertical"
         android:textAlignment="viewStart"
-        app:layout_constraintBottom_toTopOf="@+id/bnv_mainnav"
         app:layout_constraintTop_toBottomOf="@+id/tv_editcb" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -124,6 +125,9 @@
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:background="#FFFFFF"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@drawable/menu_item_color"
+        app:itemTextColor="@drawable/menu_item_color"
         app:labelVisibilityMode="labeled"
         app:layout_constraintBottom_toBottomOf="parent"
         app:menu="@menu/menu_main_navbar" />

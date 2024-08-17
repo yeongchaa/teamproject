@@ -6,37 +6,41 @@ import android.widget.TextView
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.capstone_donkki.databinding.ActFindemailBinding
 
-//TODO: 리사이클러 뷰 어뎁터 설정
-class Ingredient_Adapter(private val ingredientList: List<IngredientData>) :
+//리사이클러 뷰 어뎁터 설정
+class Ingredient_Adapter(private val ingredientList: ArrayList<IngredientData>) :
     RecyclerView.Adapter<Ingredient_Adapter.CustomViewHolder>() {
     //새로운 뷰 생성
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CustomViewHolder {
-        //리스트 아이템 포멧을 인플레이팅
+        //화면 연결
         val view =
-            LayoutInflater.from(parent.context).inflate(R.layout.ref_item_list, parent, false)
+            LayoutInflater.from(parent.context).inflate(R.layout.ref_ingredient_list, parent, false)
 
-        return CustomViewHolder(view)
-    }
+        return CustomViewHolder(view).apply {
+            itemView.setOnClickListener {
+                //리사이클러 뷰 내부 아이템 클릭 이벤트
 
-    //뷰에 아이템 리스트를 바인딩
-    override fun onBindViewHolder(holder: CustomViewHolder, position: Int) {
-        val IngredientData = ingredientList[position]
 
-        //이미지 배치
-        holder.imageView.setImageResource(IngredientData.image)
-
-        //텍스트 배치
-        holder.textView.text=IngredientData.text
+            }
+        }
     }
 
     override fun getItemCount(): Int {
-        TODO("Not yet implemented")
+        return ingredientList.size
     }
 
-    inner class CustomViewHolder(val binding: ItemRecyclerviewBinding) :
-        RecyclerView.ViewHolder(binding.root) {
-        val
+    override fun onBindViewHolder(holder: Ingredient_Adapter.CustomViewHolder, position: Int) {
+        //뷰에 아이템 리스트를 바인딩
+        holder.ingredientImage.setImageResource(ingredientList.get(position).ingredientImage)
+        holder.ingredientText.text = ingredientList.get(position).ingredientName
+        holder.expiration.text = ingredientList.get(position).expiration
+
+    }
+
+    class CustomViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        val ingredientImage = itemView.findViewById<ImageView>(R.id.iv_ingredient)    //식재료 이미지
+        val ingredientText = itemView.findViewById<TextView>(R.id.tv_ingredient)      //식재료명
+        val expiration = itemView.findViewById<TextView>(R.id.tv_expiration)          //소비기한
+
     }
 }

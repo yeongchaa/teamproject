@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFCEB">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/notosanskr_bold"
+        android:text="알림 설정"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_setting"
+        android:layout_width="350dp"
+        android:layout_height="550dp"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="100dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="0dp"
+        app:contentPadding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/notosanskr_bold"
+            android:text="소비기한 알림"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:fontFamily="@font/notosanskr_regular"
+            android:text="남은 소비기한이 설정한 기간보다\n적거나 같을 경우 알림을 발송합니다."
+            android:textColor="#808080"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_setexp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/shape_textfield" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="90dp"
+            android:fontFamily="@font/notosanskr_regular"
+            android:text=" 일 남은 식재료가 있을 경우 알림 발송"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="140dp"
+            android:fontFamily="@font/notosanskr_bold"
+            android:text="재고 알림"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="175dp"
+            android:fontFamily="@font/notosanskr_regular"
+            android:text="식재료가 설정한 수량보다\n적거나 같을 경우 알림을 발송합니다."
+            android:textColor="#808080"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_setstock"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="240dp"
+            android:background="@drawable/shape_textfield" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="230dp"
+            android:fontFamily="@font/notosanskr_regular"
+            android:text=" 개 남았을 경우 알림 발송"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="280dp"
+            android:fontFamily="@font/notosanskr_bold"
+            android:text="시간대 자동 추천"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="315dp"
+            android:fontFamily="@font/notosanskr_regular"
+            android:text="설정한 시간에 자동으로\n레시피 추천 알림을 발송합니다."
+            android:textColor="#808080"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_setTime"
+            android:layout_width="70dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="380dp"
+            android:background="@drawable/shape_textfield" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/btn_expiration"
+        style="@style/custom_toggle"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="130dp"
+        android:background="@null"
+        android:elevation="5dp" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/btn_stock"
+        style="@style/custom_toggle"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="270dp"
+        android:background="@null"
+        android:elevation="5dp" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/btn_recipe"
+        style="@style/custom_toggle"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="410dp"
+        android:background="@null"
+        android:elevation="5dp" />
+
+</RelativeLayout>

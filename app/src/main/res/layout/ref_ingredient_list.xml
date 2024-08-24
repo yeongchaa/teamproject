@@ -7,8 +7,8 @@
 
     <ImageView
         android:id="@+id/iv_ingredient"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:src="@mipmap/ic_launcher" />
 
     <TextView
@@ -16,6 +16,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="식재료명"
+        android:textSize="18sp"
         android:textAlignment="center" />
 
     <TextView
@@ -23,6 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="소비기한"
+        android:textSize="15sp"
         android:textAlignment="center" />
 
 

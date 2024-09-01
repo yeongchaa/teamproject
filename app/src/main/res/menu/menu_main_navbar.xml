@@ -26,7 +26,7 @@
         android:title="내 정보" />
 
     <item
-        android:id="@+id/frag_notiset"
+        android:id="@+id/frag_setting"
         android:enabled="true"
         android:icon="@drawable/icon_setting"
         android:title="설정" />

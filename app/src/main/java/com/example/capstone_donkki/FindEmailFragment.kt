@@ -6,10 +6,10 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
-class FindEmailActivity : AppCompatActivity() {
+class FindEmailFragment : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.act_findemail)
+        setContentView(R.layout.frag_findemail)
 
         val missingEmail: TextView = findViewById(R.id.tv_missingemail)
         //TODO: Email 주소  DB에서 찾아서 띄우기

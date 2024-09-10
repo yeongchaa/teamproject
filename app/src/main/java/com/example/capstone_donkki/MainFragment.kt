@@ -5,13 +5,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.capstone_donkki.databinding.FragMainBinding
 
 class MainFragment : Fragment() {
     private lateinit var mainBinding: FragMainBinding
-    private var layoutManager: RecyclerView.LayoutManager?=null
-    private var adapter: RecyclerView.Adapter<RecyclerAdapter.ViewHolder>?=null
+    private var layoutManager: RecyclerView.LayoutManager? = null
+    private var adapter: RecyclerView.Adapter<RecyclerAdapter.ViewHolder>? = null
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -26,8 +27,22 @@ class MainFragment : Fragment() {
     override fun onViewCreated(itemView: View, savedInstanceState: Bundle?) {
         super.onViewCreated(itemView, savedInstanceState)
 
+        //TODO: 아이콘 획일화
 
         //TODO: 프레그먼트 연결
+        val IngredientList = arrayListOf(
+            //추후 서버 연동 과정 필요
+            IngredientData(R.drawable.donkki_half, "식재료명", "0815"),
+            IngredientData(R.drawable.donkki_half, "식재료명", "0815")
+        )
+
+        mainBinding.rcvIngredient.adapter = adapter
+        mainBinding.rcvIngredient.layoutManager = (this, LinearLayoutManager.HORIZONTAL, false)
+        mainBinding.rcvIngredient.setHasFixedSize(true)
+
+        //어뎁터 호출-연결
+        mainBinding.rcvIngredient.adapter = Ingredient_Adapter(IngredientList)
+        /*
         val IngredientList = arrayListOf(
             //추후 서버 연동 과정 필요
             IngredientData(R.drawable.donkki_half, "식재료명", "0815"),
@@ -41,6 +56,6 @@ class MainFragment : Fragment() {
 
         //어뎁터 호출-연결
         rcv_ingredient.adapter = Ingredient_Adapter(IngredientList)
-
+*/
     }
 }

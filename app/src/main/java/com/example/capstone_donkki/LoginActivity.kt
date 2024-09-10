@@ -29,7 +29,7 @@ class LoginActivity : AppCompatActivity() {
         //TODO: Email분실 연결
         val btn_missingEmail: Button = findViewById(R.id.btn_missingEmail)
         btn_missingEmail.setOnClickListener {
-            val to_missingEmail: Intent = Intent(this, MissingEmailActivity::class.java)
+            val to_missingEmail: Intent = Intent(this, LostEmailFragment::class.java)
             startActivity(to_missingEmail)
         }
 

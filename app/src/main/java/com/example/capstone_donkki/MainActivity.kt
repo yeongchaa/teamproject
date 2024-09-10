@@ -20,24 +20,6 @@ class MainActivity : AppCompatActivity() {
         if (savedInstanceState == null) {
             binding.bnvMainnav.selectedItemId = R.id.frag_home
         }
-
-
-        /*
-        TODO: 메인 화면 프레그먼트 코드 파일로 옮기기
-        val IngredientList = arrayListOf(
-            //추후 서버 연동 과정 필요
-            IngredientData(R.drawable.donkki_half, "식재료명", "0815"),
-            IngredientData(R.drawable.donkki_half, "식재료명", "0815")
-        )
-
-        val rcv_ingredient: RecyclerView = findViewById(R.id.rcv_ingredient)
-        rcv_ingredient.layoutManager =
-            LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
-        rcv_ingredient.setHasFixedSize(true)
-
-        //어뎁터 호출-연결
-        rcv_ingredient.adapter = Ingredient_Adapter(IngredientList)
-*/
     }
 
     fun setBottomNavigationView() {

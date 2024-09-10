@@ -5,29 +5,20 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
-class MissingPwActivity : AppCompatActivity() {
+class LostPwFragment : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContentView(R.layout.act_missingpw)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
-        }
+        setContentView(R.layout.frag_lostpw)
 
         // 전화번호 입력 필드와 인증 버튼 찾기
         val editTextPhoneNumber = findViewById<EditText>(R.id.editTextPhoneNumber)
         val buttonVerify = findViewById<Button>(R.id.phonenumberbtn)
         val confirmButton = findViewById<Button>(R.id.checkbtn)
         confirmButton.setOnClickListener {
-            val intent = Intent(this, ResetPwActivity::class.java)
+            val intent = Intent(this, ResetPwFragment::class.java)
             startActivity(intent)
         }
 

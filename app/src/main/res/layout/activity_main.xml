@@ -6,6 +6,51 @@
     android:background="@color/beige"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
     tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="325dp"
+        android:layout_height="500dp"
+        android:orientation="vertical"
+        android:background="@color/white">
+        <!-- 달력 -->
+        <CalendarView
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="40dp"
+            android:dateTextAppearance="@style/TextAppearance.AppCompat.Large"
+            android:weekDayTextAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:focusedMonthDateColor="@color/black"
+            android:unfocusedMonthDateColor="@color/gray"
+            android:weekSeparatorLineColor="@color/light_gray"
+            android:selectedWeekBackgroundColor="@color/light_blue"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/black"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            <!-- 지출 금액 -->
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="지출"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="190dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="150,000원"
+                android:textColor="@color/red"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
 
 </LinearLayout>

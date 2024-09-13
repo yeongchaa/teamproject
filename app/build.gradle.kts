@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace = "csh.mjc.gagyebu"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "csh.mjc.gagyebu"

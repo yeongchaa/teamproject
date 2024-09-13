@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "test"
+rootProject.name = "capstone_donkki"
 include(":app")

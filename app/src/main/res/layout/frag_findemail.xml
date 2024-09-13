@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFCEB"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/notosanskr_bold"
+        android:gravity="left"
+        android:text="이메일 분실"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="350dp"
+        android:layout_height="240dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="120dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="회원님이 사용하셨던 이메일은"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/tv_missingemail"
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/shape_textfield_rounded"
+                        android:inputType="textEmailAddress"
+                        android:paddingLeft="15dp"
+                        android:text="abc123@gmail.com"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:text="입니다."
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+                </TableRow>
+            </TableLayout>
+
+            <Button
+                android:id="@+id/btn_confrimEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#593A2E"
+                android:gravity="center"
+                android:text="확인"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

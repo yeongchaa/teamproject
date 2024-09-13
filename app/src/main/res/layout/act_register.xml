@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFCEB"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/btn_Register"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/notosanskr_bold"
+            android:text="회원가입"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="100dp"
+            android:fontFamily="@font/notosanskr_bold"
+            android:text="이메일"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/et_regEmail"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="145dp"
+            android:background="@drawable/shape_textfield"
+            android:hint="이메일을 입력해주세요."
+            android:paddingLeft="15dp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/tv_dblchk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="210dp"
+            android:fontFamily="@font/notosanskr_regular"
+            android:text="사용 가능한 아이디입니다."
+            android:textColor="#61B23B"
+            android:visibility="invisible" />
+
+
+        <android.widget.Button
+            android:id="@+id/btn_dblchk"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="200dp"
+            android:background="@drawable/shape_button_round"
+            android:fontFamily="@font/notosanskr_regular"
+            android:text="중복 확인"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="260dp"
+            android:fontFamily="@font/notosanskr_bold"
+            android:text="비밀번호"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/et_regpw"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="305dp"
+            android:background="@drawable/shape_textfield"
+            android:hint="비밀번호를 입력해주세요."
+            android:paddingLeft="15dp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="380dp"
+            android:fontFamily="@font/notosanskr_bold"
+            android:text="비밀번호 재확인"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/et_regpwagn"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="425dp"
+            android:background="@drawable/shape_textfield"
+            android:hint="비밀번호를 다시 입력해주세요."
+            android:paddingLeft="15dp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="500dp"
+            android:fontFamily="@font/notosanskr_bold"
+            android:text="연령대"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <Spinner
+            android:id="@+id/spn_regage"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="545dp"
+            android:background="@drawable/shape_textfield"
+            android:spinnerMode="dialog"
+            android:textColor="#000000" />
+
+    </RelativeLayout>
+
+    <android.widget.Button
+        android:id="@+id/btn_Register"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="650dp"
+        android:background="@drawable/shape_button_normal"
+        android:fontFamily="@font/notosanskr_semibold"
+        android:text="가입하기"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

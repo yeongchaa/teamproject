@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/frag_home"
+        android:enabled="true"
+        android:icon="@drawable/icon_home"
+        android:title="홈" />
+
+    <item
+        android:id="@+id/frag_recipt"
+        android:enabled="true"
+        android:icon="@drawable/icon_camera"
+        android:title="영수증" />
+
+    <item
+        android:id="@+id/frag_cashbook"
+        android:enabled="true"
+        android:icon="@drawable/icon_piggybank"
+        android:title="가계부" />
+
+    <item
+        android:id="@+id/frag_mypage"
+        android:enabled="true"
+        android:icon="@drawable/icon_mypage"
+        android:title="내 정보" />
+
+    <item
+        android:id="@+id/frag_setting"
+        android:enabled="true"
+        android:icon="@drawable/icon_setting"
+        android:title="설정" />
+</menu>

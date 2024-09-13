@@ -26,9 +26,10 @@
             android:unfocusedMonthDateColor="@color/gray"
             android:weekSeparatorLineColor="@color/light_gray"
             android:selectedWeekBackgroundColor="@color/light_blue"/>
+        <!-- 수평선 -->
         <View
             android:layout_width="match_parent"
-            android:layout_height="2px"
+            android:layout_height="2dp"
             android:background="@color/black"/>
         <LinearLayout
             android:layout_width="match_parent"
@@ -52,5 +53,4 @@
                 android:textSize="20sp" />
         </LinearLayout>
     </LinearLayout>
-
 </LinearLayout>

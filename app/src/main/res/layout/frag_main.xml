@@ -17,15 +17,15 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
+        android:id="@+id/iv_mic"
         android:layout_width="23dp"
         android:layout_height="25dp"
-        android:id="@+id/iv_mic"
-        android:elevation="1dp"
-        android:background="@drawable/search_mic"
         android:layout_marginLeft="10dp"
+        android:background="@drawable/search_mic"
+        android:elevation="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/et_search"
         app:layout_constraintLeft_toLeftOf="@+id/et_search"
-        app:layout_constraintTop_toTopOf="@+id/et_search"
-        app:layout_constraintBottom_toBottomOf="@+id/et_search"/>
+        app:layout_constraintTop_toTopOf="@+id/et_search" />
 
     <EditText
         android:id="@+id/et_search"
@@ -56,22 +56,24 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rcv_searchtag"
         android:layout_width="match_parent"
-        android:layout_height="20dp"
+        android:layout_height="30dp"
         android:layout_marginHorizontal="30dp"
         android:layout_marginTop="10dp"
         android:scrollbars="horizontal"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/et_search" />
+        app:layout_constraintTop_toBottomOf="@id/et_search"
+        tools:itemCount="7"
+        tools:listitem="@layout/ref_ingredient_search" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:fontFamily="@font/notosanskr_bold"
-        android:text="홍길동님의 냉장고"
+        android:text="name님의 냉장고"
         android:textColor="#000000"
-        android:textSize="20dp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/rcv_ingredient"
         app:layout_constraintLeft_toLeftOf="@id/et_search"
         app:layout_constraintTop_toBottomOf="@+id/rcv_searchtag" />
@@ -91,7 +93,7 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rcv_ingredient"
-        android:layout_width="match_parent"
+        android:layout_width="350dp"
         android:layout_height="130dp"
         android:layout_marginHorizontal="10dp"
         android:layout_marginTop="10dp"
@@ -99,8 +101,30 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_refmore"
-        tools:itemCount="3"
+        tools:itemCount="5"
         tools:listitem="@layout/ref_ingredient_list" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/notosanskr_bold"
+        android:text="이번 달 식비"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/cv_foodcost"
+        app:layout_constraintLeft_toLeftOf="@+id/et_search"
+        app:layout_constraintTop_toBottomOf="@+id/rcv_ingredient" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_foodcost"
+        android:layout_width="350dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="70dp"
+        app:cardElevation="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rcv_ingredient" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

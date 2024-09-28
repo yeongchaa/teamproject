@@ -23,8 +23,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".LoginActivity" />
-        <activity android:name=".LostEmailFragment"/>
-        <activity android:name=".FindEmailFragment"/>
+        <activity android:name=".MissingUserActivity"/>
         <activity android:name=".RegisterActivity" />
         <activity android:name=".MainActivity" />
     </application>

@@ -14,13 +14,9 @@ class LostPwFragment : AppCompatActivity() {
         setContentView(R.layout.frag_lostpw)
 
         // 전화번호 입력 필드와 인증 버튼 찾기
-        val editTextPhoneNumber = findViewById<EditText>(R.id.editTextPhoneNumber)
-        val buttonVerify = findViewById<Button>(R.id.phonenumberbtn)
-        val confirmButton = findViewById<Button>(R.id.checkbtn)
-        confirmButton.setOnClickListener {
-            val intent = Intent(this, ResetPwFragment::class.java)
-            startActivity(intent)
-        }
+        val editTextPhoneNumber = findViewById<EditText>(R.id.et_phoneNum)
+        val buttonVerify = findViewById<Button>(R.id.btn_certpnum)
+        val confirmButton = findViewById<Button>(R.id.btn_find)
 
         // 인증 버튼에 클릭 이벤트 리스너 설정
         buttonVerify.setOnClickListener {

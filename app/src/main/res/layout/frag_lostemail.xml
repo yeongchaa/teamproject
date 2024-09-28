@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardView"
+        android:id="@+id/cv_lostEmail"
         android:layout_width="350dp"
         android:layout_height="280dp"
         android:layout_centerInParent="true"
@@ -117,9 +117,87 @@
                 android:layout_marginTop="20dp"
                 android:backgroundTint="#593A2E"
                 android:gravity="center"
-                android:text="확인"
+                android:text="찾기"
                 android:textColor="#FFFFFF"
                 android:textSize="15sp" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_findEmail"
+        android:layout_width="350dp"
+        android:layout_height="240dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cv_lostEmail"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="회원님이 사용하셨던 이메일은"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/tv_missingemail"
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/shape_textfield_rounded"
+                        android:inputType="textEmailAddress"
+                        android:paddingLeft="15dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:text="입니다."
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+                </TableRow>
+            </TableLayout>
+
+            <Button
+                android:id="@+id/btn_confrim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#593A2E"
+                android:gravity="center"
+                android:text="확인"
+                android:textColor="#FFFFFF" />
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>

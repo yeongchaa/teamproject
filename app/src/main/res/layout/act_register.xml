@@ -47,19 +47,18 @@
             android:textColor="#000000" />
 
         <TextView
-            android:id="@+id/tv_dblchk"
+            android:id="@+id/tv_chkEmail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="80dp"
             android:layout_marginTop="210dp"
             android:fontFamily="@font/notosanskr_regular"
-            android:text="사용 가능한 아이디입니다."
-            android:textColor="#61B23B"
+            android:text=""
             android:visibility="invisible" />
 
 
         <android.widget.Button
-            android:id="@+id/btn_dblchk"
+            android:id="@+id/btn_chkEmail"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="250dp"

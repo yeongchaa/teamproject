@@ -27,8 +27,6 @@ class MainFragment : Fragment() {
     override fun onViewCreated(itemView: View, savedInstanceState: Bundle?) {
         super.onViewCreated(itemView, savedInstanceState)
 
-        //TODO: 아이콘 획일화
-
         //TODO: 프레그먼트 연결
         val IngredientList = arrayListOf(
             //추후 서버 연동 과정 필요

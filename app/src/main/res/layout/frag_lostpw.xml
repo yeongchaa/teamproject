@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardView"
+        android:id="@+id/cv_lostpw"
         android:layout_width="350dp"
         android:layout_height="270dp"
         android:layout_centerInParent="true"
@@ -54,7 +54,7 @@
                     android:textSize="15sp" />
 
                 <TextView
-                    android:id="@+id/tvResult"
+                    android:id="@+id/tv_certResult"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
@@ -66,7 +66,7 @@
                 <TableRow>
 
                     <EditText
-                        android:id="@+id/editTextPhoneNumber"
+                        android:id="@+id/et_phoneNum"
                         android:layout_width="200dp"
                         android:layout_height="40dp"
                         android:layout_marginLeft="20dp"
@@ -78,7 +78,7 @@
                         android:textSize="14sp" />
 
                     <Button
-                        android:id="@+id/phonenumberbtn"
+                        android:id="@+id/btn_certpnum"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
@@ -103,19 +103,99 @@
                         android:textSize="14sp" />
 
                     <TextView
-                        android:id="@+id/timerTextView"
+                        android:id="@+id/ttv_certify"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:text=""
                         android:textColor="#FF0000"
                         android:textSize="14sp"
-                        android:visibility="gone" />
+                        android:visibility="invisible" />
                 </TableRow>
             </TableLayout>
 
             <Button
-                android:id="@+id/checkbtn"
+                android:id="@+id/btn_find"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#593A2E"
+                android:gravity="center"
+                android:text="찾기" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_findpw"
+        android:layout_width="350dp"
+        android:layout_height="270dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cv_lostpw">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="새로운 비밀번호를 입력해 주세요."
+                    android:textSize="15sp" />
+
+                <TableRow>
+
+                    <EditText
+                        android:id="@+id/et_npw"
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/shape_textfield_rounded"
+                        android:hint="새 비밀번호"
+                        android:inputType="textEmailAddress"
+                        android:paddingLeft="16dp"
+                        android:textSize="14sp" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <EditText
+                        android:id="@+id/et_renpw"
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/shape_textfield_rounded"
+                        android:hint="비밀번호 재확인"
+                        android:paddingLeft="16dp"
+                        android:textSize="14sp" />
+
+                </TableRow>
+            </TableLayout>
+
+            <Button
+                android:id="@+id/btn_confirm"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"

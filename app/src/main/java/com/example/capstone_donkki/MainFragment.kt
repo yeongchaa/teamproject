@@ -12,7 +12,7 @@ import com.example.capstone_donkki.databinding.FragMainBinding
 class MainFragment : Fragment() {
     private lateinit var mainBinding: FragMainBinding
     private var layoutManager: RecyclerView.LayoutManager? = null
-    private var adapter: RecyclerView.Adapter<RecyclerAdapter.ViewHolder>? = null
+   // private var adapter: RecyclerView.Adapter<RecyclerAdapter.ViewHolder>? = null
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -34,8 +34,8 @@ class MainFragment : Fragment() {
             IngredientData(R.drawable.donkki_half, "식재료명", "0815")
         )
 
-        mainBinding.rcvIngredient.adapter = adapter
-        mainBinding.rcvIngredient.layoutManager = (this, LinearLayoutManager.HORIZONTAL, false)
+       // mainBinding.rcvIngredient.adapter = adapter
+       // mainBinding.rcvIngredient.layoutManager = (this, LinearLayoutManager.HORIZONTAL, false)
         mainBinding.rcvIngredient.setHasFixedSize(true)
 
         //어뎁터 호출-연결

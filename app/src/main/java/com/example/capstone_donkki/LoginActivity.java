@@ -41,7 +41,7 @@ public class LoginActivity extends AppCompatActivity {
                 String DB_email="";
                 String DB_pw="";
 
-                if (email == DB_email && pw = DB_pw) {
+                if (email == DB_email && pw == DB_pw) {
                     //사용자 정보 일치>MainActivity 이동
                     Toast.makeText(getApplicationContext(), "어서오세요, 환영합니다!", Toast.LENGTH_SHORT).show();
 

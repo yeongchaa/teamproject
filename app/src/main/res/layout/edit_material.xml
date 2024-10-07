@@ -10,7 +10,7 @@
         android:text="2024-06-07"
         android:textSize="15sp"
         android:layout_gravity="left"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="45dp"
         android:layout_marginLeft="50dp"/>
     <!-- 편집 버튼 -->
     <TextView
@@ -20,7 +20,7 @@
         android:textSize="15sp"
         android:layout_gravity="right"
         android:clickable="true"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="45dp"
         android:layout_marginRight="50dp"/>
     <!-- 식품 목록 표시를 위한 TableLayout -->
     <TableLayout
@@ -35,6 +35,7 @@
         <TableRow
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
+            android:gravity="center"
             android:layout_weight="0">
 
             <TextView
@@ -63,6 +64,9 @@
                 android:text="가격"
                 android:textSize="18dp"
                 android:textStyle="bold" />
+            <CheckBox
+                android:layout_gravity="center"
+                android:visibility="invisible"/>
         </TableRow>
         <View
             android:layout_width="match_parent"
@@ -71,6 +75,7 @@
         <TableRow
             android:layout_weight="0"
             android:layout_height="15dp"
+            android:gravity="center"
             android:layout_marginTop="10dp">
             <TextView
                 android:layout_width="wrap_content"
@@ -93,9 +98,14 @@
                 android:textSize="15dp"
                 android:gravity="right"
                 android:textStyle="bold"/>
+            <CheckBox
+                android:layout_gravity="center"
+                android:visibility="invisible"/>
         </TableRow>
         <TableRow
             android:layout_weight="0"
+            android:layout_height="15dp"
+            android:gravity="center"
             android:layout_marginTop="10dp">
             <TextView
                 android:layout_width="wrap_content"
@@ -118,6 +128,9 @@
                 android:textSize="15dp"
                 android:gravity="right"
                 android:textStyle="bold"/>
+            <CheckBox
+                android:layout_gravity="center"
+                android:visibility="invisible"/>
         </TableRow>
         <!-- 동적으로 아이템 추가될 영역 -->
     </TableLayout>

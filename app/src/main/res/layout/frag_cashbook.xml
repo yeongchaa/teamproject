@@ -9,7 +9,7 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <!-- TODO: 디자인 문의/화면 배치-->
+
 
     <LinearLayout
         android:layout_width="325dp"

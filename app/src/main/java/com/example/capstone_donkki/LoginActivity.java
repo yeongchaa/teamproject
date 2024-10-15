@@ -31,15 +31,12 @@ public class LoginActivity extends AppCompatActivity {
         Button btn_google = findViewById(R.id.btn_google);
 
         btn_login.setOnClickListener(new View.OnClickListener() {
-            //로그인 버튼 동작: 회원 여부 확인
-            //https://firebase.google.com/docs/database/android/read-and-write?hl=ko&_gl=1
-            //https://firebase.google.com/docs/database/android/lists-of-data?hl=ko&_gl=1
             @Override
             public void onClick(View view) {
 
                 //TODO: DB에 있는 이메일/비밀번호 받아오기
-                String DB_email="";
-                String DB_pw="";
+                String DB_email = "";
+                String DB_pw = "";
 
                 if (email == DB_email && pw == DB_pw) {
                     //사용자 정보 일치>MainActivity 이동
@@ -62,15 +59,15 @@ public class LoginActivity extends AppCompatActivity {
         btn_reg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent toReg=new Intent(getApplicationContext(), RegisterActivity.class);
+                Intent toReg = new Intent(getApplicationContext(), RegisterActivity.class);
                 startActivity(toReg);
             }
         });
 
-        btn_google.setOnClickListener(new View.OnClickListener(){
+        btn_google.setOnClickListener(new View.OnClickListener() {
             //TODO: 구글 로그인 기능
             @Override
-            public void onClick(View view){
+            public void onClick(View view) {
                 Toast.makeText(getApplicationContext(), "어서오세요, 환영합니다!", Toast.LENGTH_SHORT).show();
 
                 Intent toMain = new Intent(getApplicationContext(), MainActivity.class);
@@ -85,7 +82,7 @@ public class LoginActivity extends AppCompatActivity {
                 et_email.setText("");
                 et_pw.setText("");
 
-                Intent toMissing=new Intent(getApplicationContext(), MissingUserActivity.class);
+                Intent toMissing = new Intent(getApplicationContext(), MissingUserActivity.class);
                 startActivity(toMissing);
             }
         });

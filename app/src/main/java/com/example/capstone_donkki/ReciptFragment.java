@@ -13,7 +13,8 @@ public class ReciptFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.frag_main, container, false);
+       // return inflater.inflate(R.layout.???, container, false);
+        return null;
 
         //TODO: 카메라 연결
     }

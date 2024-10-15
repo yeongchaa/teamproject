@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "593329676900",
+    "project_id": "logintesting-b7506",
+    "storage_bucket": "logintesting-b7506.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:593329676900:android:f9af02bfa3c5be6b48f571",
+        "android_client_info": {
+          "package_name": "com.example.firebaselogintestwithjava"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtzW6ybBve4b3YB6orfyxBA7ztIJJoBWQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
